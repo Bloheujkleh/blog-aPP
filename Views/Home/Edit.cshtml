@@ -1,0 +1,32 @@
+﻿@model WebApplication7.Models.Post
+
+
+<div>
+	<form method="post" >
+		@if (Model.Id != 0)
+		{
+			<input type="hidden" asp-for="Id" />
+		}
+
+		<div>
+			<label>Title</label>
+			<input asp-for="Title" />
+		</div>
+		<div>
+			<label>Body</label>
+			<input asp-for="Body" />
+		</div>
+		<input type = "submit" value="submit"/>
+	</form>
+
+	@if (!string.IsNullOrEmpty(Model?.Title))
+	{
+
+		<hr />
+		<h3> Girilen bilgiler</h3>
+		<p><strong>Baslık:</strong>@Model.Title</p>
+		<p><strong>Icerik:</strong>@Model.Body</p>
+
+
+	}
+</div>
