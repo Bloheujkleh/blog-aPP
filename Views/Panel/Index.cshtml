@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Post>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">BulentLOG</h1>
+    <p>Bu site eksisözluk olacaktır</p>
+</div>
+<img src="~/content/static/sww2.jpg" width= "500px" />
+
+<div>
+    <ul>
+        @foreach(var post in Model)
+        {
+            <li>
+                
+                    @post.Title
+                
+                --
+                <a asp-controller="Panel" asp-action="Edit" asp-route-id="@post.Id">
+                    Edit
+                </a> 
+                --
+                <a asp-controller="Panel" asp-action="Remove" asp-route-id="@post.Id">
+                    Remove
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+

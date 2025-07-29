@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fVLLrlVJXfQlvoxowaCIKQKCW+84W9aaUC57GaMkxJs=",
+  "Hash": "00eTR+dGeJTQbiZ6fVXzLB5VlJxWdwwRPQHVtPMOhsk=",
   "Source": "WebApplication7",
   "BasePath": "_content/WebApplication7",
   "Mode": "Default",
@@ -4070,6 +4070,27 @@
       "OriginalItemSpec": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApplication7.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\wwwroot\\content\\static\\sww2.jpg",
+      "SourceId": "WebApplication7",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\wwwroot\\",
+      "BasePath": "_content/WebApplication7",
+      "RelativePath": "content/static/sww2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ndfdvrkdse",
+      "Integrity": "5SWCgoHoln6W5MPK9nWie+5ToaiAPYBfEsPZpVMYfHc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\static\\sww2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\wwwroot\\css\\site.css",
       "SourceId": "WebApplication7",
       "SourceType": "Discovered",
@@ -5436,6 +5457,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "content/static/sww2.jpg",
+      "AssetFile": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\wwwroot\\content\\static\\sww2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5SWCgoHoln6W5MPK9nWie+5ToaiAPYBfEsPZpVMYfHc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 10:32:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5SWCgoHoln6W5MPK9nWie+5ToaiAPYBfEsPZpVMYfHc="
+        }
+      ]
+    },
+    {
+      "Route": "content/static/sww2.ndfdvrkdse.jpg",
+      "AssetFile": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\wwwroot\\content\\static\\sww2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5SWCgoHoln6W5MPK9nWie+5ToaiAPYBfEsPZpVMYfHc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 10:32:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ndfdvrkdse"
+        },
+        {
+          "Name": "label",
+          "Value": "content/static/sww2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5SWCgoHoln6W5MPK9nWie+5ToaiAPYBfEsPZpVMYfHc="
+        }
+      ]
+    },
     {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "C:\\Users\\bulent\\Desktop\\H-level denme\\denem4\\WebApplication7\\WebApplication7\\obj\\Debug\\net9.0\\compressed\\d6z6wineoc-b9sayid5wm.gz",

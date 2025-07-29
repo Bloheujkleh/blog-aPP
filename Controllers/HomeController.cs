@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication7.Data;
 using WebApplication7.Data.Repository;
@@ -30,47 +31,27 @@ public class HomeController : Controller
         return View(post);
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpGet]
-    public IActionResult Edit(int? id)
+    public IActionResult Create()
     {
-        if(id==null)    
-        return View(new Post());
-
-        else
-        {
-            var post = _repo.GetPost((int)id);
-            return View(post);
-        }
-    }   
+        return View();
+    }
+    [Authorize(Roles = "Admin")]
     [HttpPost]
-    public async Task<IActionResult> Edit(Post post)
+    [ValidateAntiForgeryToken]
+    public IActionResult Create(Post post)
     {
-        if (post.Id == 0)
+        if (ModelState.IsValid)
         {
             _repo.AddPost(post);
+            if (User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Index", "Panel");
+            }
         }
-        else 
-        {
-            _repo.UpdatePost(post); 
-        }
-        
-        if (await _repo.SaveChangesAsync())
-        {
-            return RedirectToAction("Index");
-        }
-       
-
-         return View(post);
+    
+        return View(post);
     }
-
-    [HttpGet]
-    public async Task <IActionResult> Remove(int? id)
-    {
-        _repo.RemovePost((int)id);
-        await _repo.SaveChangesAsync();
-        return RedirectToAction("Index");
-
-    }
-
 
 }

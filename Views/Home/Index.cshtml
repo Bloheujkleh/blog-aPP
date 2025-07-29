@@ -9,7 +9,7 @@
     <p>Bu site eksisözluk olacaktır</p>
 </div>
 
-
+<img src="~/content/static/sww2.jpg" width="500px"/>
 <div>
     <ul>
         @foreach(var post in Model)
@@ -19,13 +19,6 @@
                     @post.Title
                 </a>
                 --
-                <a asp-controller="Home" asp-action="Edit" asp-route-id="@post.Id">
-                    Edit
-                </a> 
-                --
-                <a asp-controller="Home" asp-action="Remove" asp-route-id="@post.Id">
-                    Remove
-                </a>
             </li>
         }
     </ul>

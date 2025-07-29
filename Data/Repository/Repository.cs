@@ -16,6 +16,7 @@ namespace WebApplication7.Data.Repository
         {
             post.Id = 0;
             _ctx.Posts.Add(post);
+            _ctx.SaveChanges();
             return true;
         }
 
